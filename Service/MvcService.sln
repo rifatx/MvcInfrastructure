@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcService", "MvcService\MvcService.csproj", "{E85772AC-E276-4AF4-A196-E84A5AF91577}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcService.Data", "..\Framework\MvcService.Data\MvcService.Data.csproj", "{5F219A64-C6E3-4615-9060-8B2E78AEA25F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcService.Messaging", "..\Framework\MvcService.Messaging\MvcService.Messaging.csproj", "{0DE5311B-6C4D-480E-BDAD-2117B2544365}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E85772AC-E276-4AF4-A196-E84A5AF91577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E85772AC-E276-4AF4-A196-E84A5AF91577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E85772AC-E276-4AF4-A196-E84A5AF91577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E85772AC-E276-4AF4-A196-E84A5AF91577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F219A64-C6E3-4615-9060-8B2E78AEA25F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F219A64-C6E3-4615-9060-8B2E78AEA25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F219A64-C6E3-4615-9060-8B2E78AEA25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F219A64-C6E3-4615-9060-8B2E78AEA25F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DE5311B-6C4D-480E-BDAD-2117B2544365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DE5311B-6C4D-480E-BDAD-2117B2544365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DE5311B-6C4D-480E-BDAD-2117B2544365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DE5311B-6C4D-480E-BDAD-2117B2544365}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
