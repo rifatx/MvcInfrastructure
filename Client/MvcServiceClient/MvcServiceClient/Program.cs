@@ -39,14 +39,20 @@ namespace MvcServiceClient
 
 
             Console.WriteLine(MessagingService.Current["http://localhost/MvcService/Main/", "Method1"].GetResponse<TestData, TestData>(new TestData() { id = 1, name = "osman" }));
-            Console.WriteLine(MessagingService.Current["http://localhost/MvcService/Main/", "Method2"].GetResponse<TestData, TestData>(new TestData() { id = 2, name = "osman2" }));
 
-            MessagingService.Current["http://localhost/MvcService/Main/", "Method2"].GetResponseAsync<TestData, TestData>(new TestData() { id = 2, name = "osman2" },
-                (t1, t2) => { return t2; }
-            , (f) =>
+            MessagingService.Current["http://localhost/MvcService/Main/", "Method2", 1000].GetResponseAsync<TestData, TestData>(new TestData() { id = 3, name = "osman3" },
+                (req, res) =>
                 {
-                    
+                    Console.WriteLine(res);
+                },
+                (req) =>
+                {
+                    Console.WriteLine("error: " + req);
                 });
+
+            Console.WriteLine(MessagingService.Current["Method1"].GetResponse<TestData, TestData>(new TestData() { id = 2, name = "osman2" }));
+
+            Console.WriteLine("bitti");
 
             Console.ReadLine();
         }

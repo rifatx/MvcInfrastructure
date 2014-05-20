@@ -26,6 +26,7 @@ namespace MvcService.Controllers
         [HttpPost]
         public ActionResult Method2(User u)
         {
+            System.Threading.Thread.Sleep(3000);
             return new JsonResult() { Data = u };
         }
 
